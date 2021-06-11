@@ -1,0 +1,178 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.qrcodeplayer"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="30" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/Users/User1/Desktop/qrcodeplayer/android/app/src/main/AndroidManifest.xml:3:5-66
+14-->/Users/User1/Desktop/qrcodeplayer/android/app/src/main/AndroidManifest.xml:3:22-64
+15    <uses-permission android:name="android.permission.CAMERA" />
+15-->[:flutter_barcode_scanner] /Users/User1/Desktop/qrcodeplayer/build/flutter_barcode_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-65
+15-->[:flutter_barcode_scanner] /Users/User1/Desktop/qrcodeplayer/build/flutter_barcode_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-62
+16
+17    <uses-feature android:name="android.hardware.camera" />
+17-->[:flutter_barcode_scanner] /Users/User1/Desktop/qrcodeplayer/build/flutter_barcode_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-60
+17-->[:flutter_barcode_scanner] /Users/User1/Desktop/qrcodeplayer/build/flutter_barcode_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:11:19-57
+18
+19    <uses-permission android:name="android.permission.FLASHLIGHT" />
+19-->[:flutter_barcode_scanner] /Users/User1/Desktop/qrcodeplayer/build/flutter_barcode_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-69
+19-->[:flutter_barcode_scanner] /Users/User1/Desktop/qrcodeplayer/build/flutter_barcode_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:13:22-66
+20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+20-->[com.google.android.exoplayer:exoplayer-core:2.12.1] /Users/User1/.gradle/caches/transforms-2/files-2.1/2273af31de740951c0134ce2428722c6/jetified-exoplayer-core-2.12.1/AndroidManifest.xml:24:5-79
+20-->[com.google.android.exoplayer:exoplayer-core:2.12.1] /Users/User1/.gradle/caches/transforms-2/files-2.1/2273af31de740951c0134ce2428722c6/jetified-exoplayer-core-2.12.1/AndroidManifest.xml:24:22-76
+21
+22    <uses-feature
+22-->[com.journeyapps:zxing-android-embedded:4.1.0] /Users/User1/.gradle/caches/transforms-2/files-2.1/2d270d3ed13396fa5b8c3771a586e7a3/jetified-zxing-android-embedded-4.1.0/AndroidManifest.xml:28:5-30:36
+23        android:name="android.hardware.camera.front"
+23-->[com.journeyapps:zxing-android-embedded:4.1.0] /Users/User1/.gradle/caches/transforms-2/files-2.1/2d270d3ed13396fa5b8c3771a586e7a3/jetified-zxing-android-embedded-4.1.0/AndroidManifest.xml:29:9-53
+24        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+24-->[com.journeyapps:zxing-android-embedded:4.1.0] /Users/User1/.gradle/caches/transforms-2/files-2.1/2d270d3ed13396fa5b8c3771a586e7a3/jetified-zxing-android-embedded-4.1.0/AndroidManifest.xml:30:9-33
+25    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+26    <uses-feature
+26-->[com.journeyapps:zxing-android-embedded:4.1.0] /Users/User1/.gradle/caches/transforms-2/files-2.1/2d270d3ed13396fa5b8c3771a586e7a3/jetified-zxing-android-embedded-4.1.0/AndroidManifest.xml:33:5-35:36
+27        android:name="android.hardware.camera.autofocus"
+27-->[com.journeyapps:zxing-android-embedded:4.1.0] /Users/User1/.gradle/caches/transforms-2/files-2.1/2d270d3ed13396fa5b8c3771a586e7a3/jetified-zxing-android-embedded-4.1.0/AndroidManifest.xml:34:9-57
+28        android:required="false" />
+28-->[com.journeyapps:zxing-android-embedded:4.1.0] /Users/User1/.gradle/caches/transforms-2/files-2.1/2d270d3ed13396fa5b8c3771a586e7a3/jetified-zxing-android-embedded-4.1.0/AndroidManifest.xml:35:9-33
+29    <uses-feature
+29-->[com.journeyapps:zxing-android-embedded:4.1.0] /Users/User1/.gradle/caches/transforms-2/files-2.1/2d270d3ed13396fa5b8c3771a586e7a3/jetified-zxing-android-embedded-4.1.0/AndroidManifest.xml:36:5-38:36
+30        android:name="android.hardware.camera.flash"
+30-->[com.journeyapps:zxing-android-embedded:4.1.0] /Users/User1/.gradle/caches/transforms-2/files-2.1/2d270d3ed13396fa5b8c3771a586e7a3/jetified-zxing-android-embedded-4.1.0/AndroidManifest.xml:37:9-53
+31        android:required="false" />
+31-->[com.journeyapps:zxing-android-embedded:4.1.0] /Users/User1/.gradle/caches/transforms-2/files-2.1/2d270d3ed13396fa5b8c3771a586e7a3/jetified-zxing-android-embedded-4.1.0/AndroidManifest.xml:38:9-33
+32    <uses-feature
+32-->[com.journeyapps:zxing-android-embedded:4.1.0] /Users/User1/.gradle/caches/transforms-2/files-2.1/2d270d3ed13396fa5b8c3771a586e7a3/jetified-zxing-android-embedded-4.1.0/AndroidManifest.xml:39:5-41:36
+33        android:name="android.hardware.screen.landscape"
+33-->[com.journeyapps:zxing-android-embedded:4.1.0] /Users/User1/.gradle/caches/transforms-2/files-2.1/2d270d3ed13396fa5b8c3771a586e7a3/jetified-zxing-android-embedded-4.1.0/AndroidManifest.xml:40:9-57
+34        android:required="false" />
+34-->[com.journeyapps:zxing-android-embedded:4.1.0] /Users/User1/.gradle/caches/transforms-2/files-2.1/2d270d3ed13396fa5b8c3771a586e7a3/jetified-zxing-android-embedded-4.1.0/AndroidManifest.xml:41:9-33
+35    <uses-feature
+35-->[com.journeyapps:zxing-android-embedded:4.1.0] /Users/User1/.gradle/caches/transforms-2/files-2.1/2d270d3ed13396fa5b8c3771a586e7a3/jetified-zxing-android-embedded-4.1.0/AndroidManifest.xml:42:5-44:36
+36        android:name="android.hardware.wifi"
+36-->[com.journeyapps:zxing-android-embedded:4.1.0] /Users/User1/.gradle/caches/transforms-2/files-2.1/2d270d3ed13396fa5b8c3771a586e7a3/jetified-zxing-android-embedded-4.1.0/AndroidManifest.xml:43:9-45
+37        android:required="false" />
+37-->[com.journeyapps:zxing-android-embedded:4.1.0] /Users/User1/.gradle/caches/transforms-2/files-2.1/2d270d3ed13396fa5b8c3771a586e7a3/jetified-zxing-android-embedded-4.1.0/AndroidManifest.xml:44:9-33
+38
+39    <application
+39-->/Users/User1/Desktop/qrcodeplayer/android/app/src/main/AndroidManifest.xml:4:4-42:19
+40        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+40-->[androidx.core:core:1.5.0] /Users/User1/.gradle/caches/transforms-2/files-2.1/4d87ed05196533b5ec796c2b8988bfe8/core-1.5.0/AndroidManifest.xml:24:18-86
+41        android:debuggable="true"
+42        android:icon="@mipmap/ic_launcher"
+42-->/Users/User1/Desktop/qrcodeplayer/android/app/src/main/AndroidManifest.xml:6:9-43
+43        android:label="qrcodeplayer"
+43-->/Users/User1/Desktop/qrcodeplayer/android/app/src/main/AndroidManifest.xml:5:9-37
+44        android:largeHeap="true"
+44-->[:flutter_barcode_scanner] /Users/User1/Desktop/qrcodeplayer/build/flutter_barcode_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-33
+45        android:theme="@style/Theme.AppCompat.NoActionBar" >
+45-->[:flutter_barcode_scanner] /Users/User1/Desktop/qrcodeplayer/build/flutter_barcode_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:17:9-59
+46        <activity
+46-->/Users/User1/Desktop/qrcodeplayer/android/app/src/main/AndroidManifest.xml:7:9-35:20
+47            android:name="com.example.qrcodeplayer.MainActivity"
+47-->/Users/User1/Desktop/qrcodeplayer/android/app/src/main/AndroidManifest.xml:8:13-41
+48            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+48-->/Users/User1/Desktop/qrcodeplayer/android/app/src/main/AndroidManifest.xml:11:13-163
+49            android:hardwareAccelerated="true"
+49-->/Users/User1/Desktop/qrcodeplayer/android/app/src/main/AndroidManifest.xml:12:13-47
+50            android:launchMode="singleTop"
+50-->/Users/User1/Desktop/qrcodeplayer/android/app/src/main/AndroidManifest.xml:9:13-43
+51            android:theme="@style/LaunchTheme"
+51-->/Users/User1/Desktop/qrcodeplayer/android/app/src/main/AndroidManifest.xml:10:13-47
+52            android:windowSoftInputMode="adjustResize" >
+52-->/Users/User1/Desktop/qrcodeplayer/android/app/src/main/AndroidManifest.xml:13:13-55
+53
+54            <!--
+55                 Specifies an Android theme to apply to this Activity as soon as
+56                 the Android process has started. This theme is visible to the user
+57                 while the Flutter UI initializes. After that, this theme continues
+58                 to determine the Window background behind the Flutter UI.
+59            -->
+60            <meta-data
+60-->/Users/User1/Desktop/qrcodeplayer/android/app/src/main/AndroidManifest.xml:18:13-21:17
+61                android:name="io.flutter.embedding.android.NormalTheme"
+61-->/Users/User1/Desktop/qrcodeplayer/android/app/src/main/AndroidManifest.xml:19:15-70
+62                android:resource="@style/NormalTheme" />
+62-->/Users/User1/Desktop/qrcodeplayer/android/app/src/main/AndroidManifest.xml:20:15-52
+63            <!--
+64                 Displays an Android View that continues showing the launch screen
+65                 Drawable until Flutter paints its first frame, then this splash
+66                 screen fades out. A splash screen is useful to avoid any visual
+67                 gap between the end of Android's launch screen and the painting of
+68                 Flutter's first frame.
+69            -->
+70            <meta-data
+70-->/Users/User1/Desktop/qrcodeplayer/android/app/src/main/AndroidManifest.xml:27:13-30:17
+71                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+71-->/Users/User1/Desktop/qrcodeplayer/android/app/src/main/AndroidManifest.xml:28:15-79
+72                android:resource="@drawable/launch_background" />
+72-->/Users/User1/Desktop/qrcodeplayer/android/app/src/main/AndroidManifest.xml:29:15-61
+73
+74            <intent-filter>
+74-->/Users/User1/Desktop/qrcodeplayer/android/app/src/main/AndroidManifest.xml:31:13-34:29
+75                <action android:name="android.intent.action.MAIN" />
+75-->/Users/User1/Desktop/qrcodeplayer/android/app/src/main/AndroidManifest.xml:32:17-68
+75-->/Users/User1/Desktop/qrcodeplayer/android/app/src/main/AndroidManifest.xml:32:25-66
+76
+77                <category android:name="android.intent.category.LAUNCHER" />
+77-->/Users/User1/Desktop/qrcodeplayer/android/app/src/main/AndroidManifest.xml:33:17-76
+77-->/Users/User1/Desktop/qrcodeplayer/android/app/src/main/AndroidManifest.xml:33:27-74
+78            </intent-filter>
+79        </activity>
+80        <activity android:name="com.apptreesoftware.barcodescan.BarcodeScannerActivity" />
+80-->/Users/User1/Desktop/qrcodeplayer/android/app/src/main/AndroidManifest.xml:36:9-90
+80-->/Users/User1/Desktop/qrcodeplayer/android/app/src/main/AndroidManifest.xml:36:19-88
+81        <!--
+82             Don't delete the meta-data below.
+83             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+84        -->
+85        <meta-data
+85-->/Users/User1/Desktop/qrcodeplayer/android/app/src/main/AndroidManifest.xml:39:9-41:33
+86            android:name="flutterEmbedding"
+86-->/Users/User1/Desktop/qrcodeplayer/android/app/src/main/AndroidManifest.xml:40:13-44
+87            android:value="2" />
+87-->/Users/User1/Desktop/qrcodeplayer/android/app/src/main/AndroidManifest.xml:41:13-30
+88
+89        <activity android:name="com.amolg.flutterbarcodescanner.BarcodeCaptureActivity" />
+89-->[:flutter_barcode_scanner] /Users/User1/Desktop/qrcodeplayer/build/flutter_barcode_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:18:9-91
+89-->[:flutter_barcode_scanner] /Users/User1/Desktop/qrcodeplayer/build/flutter_barcode_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:18:19-88
+90        <activity
+90-->[com.google.android.gms:play-services-base:17.4.0] /Users/User1/.gradle/caches/transforms-2/files-2.1/76dde92b4ca75fcfbb242066f55fbf0d/jetified-play-services-base-17.4.0/AndroidManifest.xml:23:9-26:75
+91            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+91-->[com.google.android.gms:play-services-base:17.4.0] /Users/User1/.gradle/caches/transforms-2/files-2.1/76dde92b4ca75fcfbb242066f55fbf0d/jetified-play-services-base-17.4.0/AndroidManifest.xml:24:13-79
+92            android:exported="false"
+92-->[com.google.android.gms:play-services-base:17.4.0] /Users/User1/.gradle/caches/transforms-2/files-2.1/76dde92b4ca75fcfbb242066f55fbf0d/jetified-play-services-base-17.4.0/AndroidManifest.xml:25:13-37
+93            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+93-->[com.google.android.gms:play-services-base:17.4.0] /Users/User1/.gradle/caches/transforms-2/files-2.1/76dde92b4ca75fcfbb242066f55fbf0d/jetified-play-services-base-17.4.0/AndroidManifest.xml:26:13-72
+94
+95        <meta-data
+95-->[com.google.android.gms:play-services-basement:17.4.0] /Users/User1/.gradle/caches/transforms-2/files-2.1/fa7337b3044f7055035ddec1228796a3/jetified-play-services-basement-17.4.0/AndroidManifest.xml:23:9-25:69
+96            android:name="com.google.android.gms.version"
+96-->[com.google.android.gms:play-services-basement:17.4.0] /Users/User1/.gradle/caches/transforms-2/files-2.1/fa7337b3044f7055035ddec1228796a3/jetified-play-services-basement-17.4.0/AndroidManifest.xml:24:13-58
+97            android:value="@integer/google_play_services_version" />
+97-->[com.google.android.gms:play-services-basement:17.4.0] /Users/User1/.gradle/caches/transforms-2/files-2.1/fa7337b3044f7055035ddec1228796a3/jetified-play-services-basement-17.4.0/AndroidManifest.xml:25:13-66
+98
+99        <activity
+99-->[com.journeyapps:zxing-android-embedded:4.1.0] /Users/User1/.gradle/caches/transforms-2/files-2.1/2d270d3ed13396fa5b8c3771a586e7a3/jetified-zxing-android-embedded-4.1.0/AndroidManifest.xml:47:9-53:63
+100            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+100-->[com.journeyapps:zxing-android-embedded:4.1.0] /Users/User1/.gradle/caches/transforms-2/files-2.1/2d270d3ed13396fa5b8c3771a586e7a3/jetified-zxing-android-embedded-4.1.0/AndroidManifest.xml:48:13-74
+101            android:clearTaskOnLaunch="true"
+101-->[com.journeyapps:zxing-android-embedded:4.1.0] /Users/User1/.gradle/caches/transforms-2/files-2.1/2d270d3ed13396fa5b8c3771a586e7a3/jetified-zxing-android-embedded-4.1.0/AndroidManifest.xml:49:13-45
+102            android:screenOrientation="sensorLandscape"
+102-->[com.journeyapps:zxing-android-embedded:4.1.0] /Users/User1/.gradle/caches/transforms-2/files-2.1/2d270d3ed13396fa5b8c3771a586e7a3/jetified-zxing-android-embedded-4.1.0/AndroidManifest.xml:50:13-56
+103            android:stateNotNeeded="true"
+103-->[com.journeyapps:zxing-android-embedded:4.1.0] /Users/User1/.gradle/caches/transforms-2/files-2.1/2d270d3ed13396fa5b8c3771a586e7a3/jetified-zxing-android-embedded-4.1.0/AndroidManifest.xml:51:13-42
+104            android:theme="@style/zxing_CaptureTheme"
+104-->[com.journeyapps:zxing-android-embedded:4.1.0] /Users/User1/.gradle/caches/transforms-2/files-2.1/2d270d3ed13396fa5b8c3771a586e7a3/jetified-zxing-android-embedded-4.1.0/AndroidManifest.xml:52:13-54
+105            android:windowSoftInputMode="stateAlwaysHidden" />
+105-->[com.journeyapps:zxing-android-embedded:4.1.0] /Users/User1/.gradle/caches/transforms-2/files-2.1/2d270d3ed13396fa5b8c3771a586e7a3/jetified-zxing-android-embedded-4.1.0/AndroidManifest.xml:53:13-60
+106    </application>
+107
+108</manifest>
